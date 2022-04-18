@@ -6,21 +6,10 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, */
-  background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 h1,
@@ -54,4 +43,38 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.grey {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, */
+}
+
+.fun {
+  /* CSS generated from https://uigradients.com */
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f7b733,
+    #fc4a1a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f7b733,
+    #fc4a1a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fun .btn {
+  background-color: palegreen;
+  border: 3px solid pink;
 }
