@@ -20,7 +20,18 @@ h5 {
   margin: 0;
   font-weight: 300;
 }
+.list {
+  list-style: none;
+}
 
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  height: 5rem;
+}
 .api-title {
   font-size: 4rem;
   border-bottom: 0;
