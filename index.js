@@ -1,6 +1,8 @@
-fetch("https://apis.scrimba.com/bored/api/activity")
-    .then(response => response.json())
+
+  document.getElementById("getActivity").addEventListener("click", function(){
+    fetch("https://apis.scrimba.com/bored/api/activity")
+    .then(reponse => reponse.json())
     .then(data => {
-        console.log(data)
-        document.getElementById("activity-name").textContent = data.activity
+        document.getElementById("activity").textContent = data.activity
     })
+  })  

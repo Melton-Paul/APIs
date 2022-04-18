@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;900&display=swap");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, */
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.api-title {
+  font-size: 4rem;
+  border-bottom: 0;
+}
+.btn {
+  border: 0;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+.btn:hover {
+  background-color: rebeccapurple;
+  opacity: 0.8;
+}
+
+.api-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
