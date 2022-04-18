@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="./css/blogstyles.css">
 </head>
 <body>
-    
+    <nav class="nav-background"> 
+        <div class="nav">
+            <p class="nav-title">BlogSpace</p>
+            <ul class="nav-list list">
+                <li class="nav-item"><a href="index.html">BoredBot API</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="postContainer"></div>
+    <div class="blogInput">
+        <label for="blogTitleInput">Title</label>
+        <input type="text" id="blogTitleInput" name="blogTitleInput" placeholder="Enter Your Title" maxlength="30  ">
+        <label for="blogBodyInput">Body</label>
+        <input type="text" id="blogBodyInput" name="blogBodyInput" placeholder="Enter your Body" maxlength="400">
+        <button type="submit">Submit</button>
+    </div>
     <script src="/js/blog.js"></script>
 </body>
 </html>
