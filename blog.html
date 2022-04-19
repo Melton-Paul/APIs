@@ -16,14 +16,18 @@
             </ul>
         </div>
     </nav>
+    <form class="blogInput" id="blogInput">
+            <div class="inputWrapper">
+                <label for="blogTitleInput">Title :</label>
+                <input type="text" id="blogTitleInput" name="blogTitleInput" placeholder="Enter Your Title" maxlength="30  ">
+            </div>
+            <inputWrapper>
+                <label for="blogBodyInput" class="textAreaLabel">Body :</label>
+                <textarea placeholder="Enter your body text" name="blogBodyInput" id="blogBodyInput" cols="30" rows="10" maxlength="500cr"></textarea>
+            </inputWrapper>
+            <button type="submit">Submit</button>
+    </form>
     <div id="postContainer"></div>
-    <div class="blogInput">
-        <label for="blogTitleInput">Title</label>
-        <input type="text" id="blogTitleInput" name="blogTitleInput" placeholder="Enter Your Title" maxlength="30  ">
-        <label for="blogBodyInput">Body</label>
-        <input type="text" id="blogBodyInput" name="blogBodyInput" placeholder="Enter your Body" maxlength="400">
-        <button type="submit">Submit</button>
-    </div>
     <script src="/js/blog.js"></script>
 </body>
 </html>

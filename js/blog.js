@@ -10,3 +10,28 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
         }).join(``);
         document.getElementById("postContainer").innerHTML= singlePost
     })
+
+    document.getElementById("blogInput").addEventListener("submit", function(event){
+        event.preventDefault()
+        const title = document.getElementById("blogTitleInput")
+        const body = document.getElementById("blogBodyInput")
+        let post = {
+            title: title.value,
+            body: body.value
+        }
+        const options = {
+            method: "POST",
+            body: JSON.stringify(post),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }
+        fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("postContainer").innerHTML += `<h2>${data.title}</h2>
+                <p>${data.body}</p>
+                <hr />
+                `
+            })
+    })

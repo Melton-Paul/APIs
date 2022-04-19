@@ -12,7 +12,7 @@ body {
 .list {
   list-style: none;
 }
-
+/* Nav Bar */
 .nav-list {
   display: flex;
   justify-content: center;
@@ -43,8 +43,10 @@ body {
   font-weight: 800;
 }
 
+/* Posts */
+
 #postContainer {
-  padding: 7rem 1rem;
+  padding: 0 1rem;
 }
 
 #postContainer h2 {
@@ -54,4 +56,26 @@ body {
 #postContainer p {
   text-indent: 1rem;
   opacity: 0.8;
+}
+
+/* Post Input */
+
+.blogInput {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: lightcyan;
+  padding-bottom: 2rem;
+}
+.blogInput button {
+  padding: 1rem;
+  background: #252525;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.blogInput button:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
