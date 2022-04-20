@@ -82,3 +82,11 @@ body {
 .blogInput button:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+/*  */
+/* Game OF WAR */
+/*  */
+
+.warContainer {
+  padding-top: 7rem;
+}
