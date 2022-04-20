@@ -99,7 +99,6 @@ body {
   background: yellow;
   border: none;
   padding: 0.6rem;
-  margin: 0.5rem;
   cursor: pointer;
 }
 .warBtn:hover {
@@ -107,10 +106,13 @@ body {
 }
 
 #drawCards {
-  display: none;
+  width: 100%;
+}
+#drawCards1 {
+  width: 100%;
 }
 #getCards {
-  margin-bottom: 1rem;
+  margin: 0.5rem;
 }
 
 #deckNotify {
@@ -138,6 +140,9 @@ body {
   width: calc(200px * 5 / 7);
   border: 3px solid black;
   border-radius: 11px;
+  margin: 0.5rem;
+}
+#drawContainer {
   margin: 0.5rem;
 }
 
