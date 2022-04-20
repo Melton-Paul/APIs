@@ -88,5 +88,64 @@ body {
 /*  */
 
 .warContainer {
-  padding-top: 7rem;
+  margin-top: 5rem;
+  height: 40rem;
+  background: forestgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.warBtn {
+  background: yellow;
+  border: none;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.warBtn:hover {
+  opacity: 0.8;
+}
+
+#drawCards {
+  display: none;
+}
+#getCards {
+  margin-bottom: 1rem;
+}
+
+#deckNotify {
+  display: none;
+  animation: fadeVisibility 1s;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#cardContainer {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+}
+#cardContainer img {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.cardPlaceHolder {
+  height: 215px;
+  width: calc(200px * 5 / 7);
+  border: 3px solid black;
+  border-radius: 11px;
+  margin: 0.5rem;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }

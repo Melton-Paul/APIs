@@ -10,7 +10,7 @@
 <body>
     <nav class="nav-background"> 
         <div class="nav">
-            <p class="nav-title">BlogSpace</p>
+            <p class="nav-title">Game Of War</p>
             <ul class="nav-list list">
                 <li class="nav-item"><a href="index.html">BoredBot API</a></li>
                 <li class="nav-item"><a href="weather.html">Weather API</a></li>
@@ -18,8 +18,15 @@
         </div>
     </nav>
     <section class="warContainer">
-        <button id="getCards">Get a new deck</button>
-        <button id="drawCards">Draw</button>
+        <div>
+            <button class="warBtn" id="getCards">Get a new deck</button>
+            <p id="deckNotify">New Deck Accquired</p>
+        </div>
+        <div id="cardContainer">
+            <div class="cardPlaceHolder"></div>
+            <div class="cardPlaceHolder"></div>
+        </div>
+        <button class="warBtn" id="drawCards">Draw</button>
     </section>
     <script src="./js/war.js"></script>
 </body>
