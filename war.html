@@ -17,14 +17,22 @@
             </ul>
         </div>
     </nav>
-    <section class="warContainer">
+    <section id="warContainer">
         <div>
             <button class="warBtn" id="getCards">Get a new deck</button>
             <p id="deckNotify"></p>
         </div>
+        <h3 id="cardsNotif">Out Of Cards, Get a new deck!</h3>
+        <h2 id="winnerNotif"></h2>
+        <div id="computerWrapper" class="pointWrapper">
+            <p id="computerPoints">Points: 0 </p>
+        </div>
         <div id="cardContainer">
             <div class="cardPlaceHolder"></div>
             <div class="cardPlaceHolder"></div>
+        </div>
+        <div id="playerWrapper"  class="pointWrapper">
+            <p id="playerPoints">Points: 0</p>
         </div>
         <div id="drawContainer">
             <button class="warBtn" id="drawCards">Draw</button>
