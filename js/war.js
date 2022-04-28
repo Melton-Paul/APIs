@@ -6,6 +6,7 @@ let card2Value
 let cardsLeft
 let computerPoints = 0
 let playerPoints = 0
+const header = document.getElementById("header")
 const notify = document.getElementById("deckNotify")
 document.getElementById("getCards").addEventListener("click", fetchDeck)
 document.getElementById("drawCards").addEventListener("click", drawCards)
@@ -18,14 +19,11 @@ function fetchDeck() {
         window.localStorage.clear()
         window.localStorage.setItem('ID', data.deck_id)
         deckId = window.localStorage.getItem('ID')
-        notify.style.display= "inline"
-        notify.textContent = "New Deck Accquired"
         document.getElementById("computerWrapper").innerHTML = ``
         document.getElementById("playerWrapper").innerHTML = ``
         document.getElementById("cardContainer").innerHTML = `
         <div class="cardPlaceHolder"></div>
         <div class="cardPlaceHolder"></div>`
-        setTimeout(()=> notify.textContent = `Cards left: ${cardsLeft}`, 2000)
         renderPage()
         
     })
@@ -83,7 +81,7 @@ function calcWinner(data){
             }, 2000)
                 
     }
-    if (playerPoints > computerPoints){
+    else{
         setTimeout(()=> {
             document.getElementById("warContainer").innerHTML=`
             <div class="winScreen">
@@ -109,9 +107,13 @@ function calcWinner(data){
         if(card1ValueIndex > card2ValueIndex){
             computerPoints++
             window.localStorage.setItem("computerPoints", computerPoints)
+            header.textContent= "The Computer Won The Round"
+
+            
         } if (card1ValueIndex < card2ValueIndex) {
             playerPoints++
             window.localStorage.setItem("playerPoints", playerPoints)
+            header.textContent= "You Won The Round"
 
         }}
     }
@@ -125,7 +127,6 @@ function renderPage(){
     cardsLeft = window.localStorage.getItem("cardsLeft")
     computerPoints = window.localStorage.getItem("playerPoints")
     playerPoints = window.localStorage.getItem("computerPoints")
-    notify.style.display= "inline"
     notify.textContent= `Cards left: 52`
     if (card1){
     notify.textContent= `Cards left: ${cardsLeft}`
